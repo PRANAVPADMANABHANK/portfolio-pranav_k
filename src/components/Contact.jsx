@@ -1,16 +1,13 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-
-//oH7YUIBevUf29Y3FW
-//template_dafa6b4
-//service_1qlzv23
-
 
 const Contact = () => {
   const formRef = useRef();
@@ -34,6 +31,13 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Validate form fields
+    if (!form.name || !form.email || !form.message) {
+      toast.error("Please fill in all fields.");
+      return;
+    }
+
     setLoading(true);
 
     emailjs
@@ -52,7 +56,7 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          toast.success("Thank you. I will get back to you as soon as possible.");
 
           setForm({
             name: "",
@@ -64,7 +68,7 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          toast.error("Ahh, something went wrong. Please try again.");
         }
       );
   };
@@ -134,6 +138,8 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+
+      <ToastContainer position="bottom-right" />
     </div>
   );
 };
