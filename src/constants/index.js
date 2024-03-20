@@ -7,6 +7,7 @@ import {
   typescript,
   html,
   css,
+  angular,
   reactjs,
   redux,
   tailwind,
@@ -17,13 +18,15 @@ import {
   figma,
   docker,
   meta,
-  smartCrystalLogo,
+  mitzLogo,
   brototype,
+  selfEmployed,
   shopify,
-  binge,
-  smartCrystal,
-  watchClub,
+  blogApp,
+  recipeBook,
+  gigConnect,
   threejs,
+  tcsIon
 } from "../assets";
 
 export const navLinks = [
@@ -47,6 +50,10 @@ const services = [
     icon: web,
   },
   {
+    title: "Angular Developer",
+    icon: creator,
+  },
+  {
     title: "React JS Developer",
     icon: mobile,
   },
@@ -54,10 +61,10 @@ const services = [
     title: "Backend Developer",
     icon: backend,
   },
-  {
-    title: "Frontend Developer",
-    icon: creator,
-  },
+  // {
+  //   title: "Frontend Developer",
+  //   icon: creator,
+  // },
 ];
 
 const technologies = [
@@ -76,6 +83,10 @@ const technologies = [
   {
     name: "TypeScript",
     icon: typescript,
+  },
+  {
+    name: "Angular",
+    icon: angular,
   },
   {
     name: "React JS",
@@ -113,28 +124,50 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Freelance Web Developer",
-    company_name: "Smart Crystal Facility Management india",
-    icon: smartCrystalLogo,
+    title: "Product Engineer",
+    company_name: "MIZTECH AI MINDS",
+    icon: mitzLogo,
     iconBg: "#fff",
-    date: "April 2023 - May 2023",
+    date: "Oct 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "As a valued member of OpzHive's(https://opzhive.com) core team, contributed as an Angular frontend developer for OpzHive's flagship product, driving the implementation of innovative solutions and ensuring top-tier user experiences.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Develop, Deployed and handover the project before the deadline.",
+      "Enhanced product with SEO-optimized SSR implementation.",
+      "Implemented micro frontend approach for enhanced modularity and scalability."
     ],
   },
   {
     title: "MERN Stack Development Intern",
-    company_name: "Brototype",
+    company_name: "BROTOTYPE",
     icon: brototype,
     iconBg: "black",
-    date: "Sept 2023 - April 2023",
+    date: "Oct 2022 - Sept 2023",
     points: [
       "Gained hands-on experience in developing full-stack web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).",
       "Receiving regular feedback and guidance from working professionals in the tech industry.",
       "Completing weekly tasks and projects that challenge and enhance your skills and knowledge. ",
       "Successfully completed two major projects along with several minor projects.",
+    ],
+  },
+  {
+    title: "Freelance Web Developer",
+    company_name: "SELF EMPLOYED",
+    icon: selfEmployed,
+    iconBg: "#fff",
+    date: "Jun 2021 - Sept 2022",
+    points: [
+      "Developed outdoor project management solutions, enhancing efficiency in outdoor activities and resource management.",
+      "Managed client projects, gaining hands-on experience.",
+    ],
+  },
+  {
+    title: "TCS iON Career Edge - Internship",
+    company_name: "TATA CONSULTANCY SERVICE",
+    icon: tcsIon,
+    iconBg: "#fff",
+    date: "JuL 2021 - Nov 2021",
+    points: [
+      "successfully completing TCS iON Career Edge - Young Professional a course that covers , Communication Skills │ Presentation Skills│ Soft Skills │ Career Guidance Framework │ Resume Writing │ Group Discussion Skills│ Interview Skills │ Business Etiquette │ Effective Email Writing │ Telephone Etiquette │ Accounting Fundamentals │ IT Foundational Skills │ Overview of Artificial Intelligence",
     ],
   }
 ];
@@ -142,12 +175,50 @@ const experiences = [
 
 const projects = [
   {
-    name: "Binge",
-    description: "Web-based platform that connects movie lovers with a rich database of films and a dynamic social network. Features: Fast loading, Smooth animation, Follow & Chat, Real-time Notification, Email Confirmation, Rating, Review, Post, Wishlist.",
+    name: "Recipe Book",
+    description:
+      "Recipe Book is an Angular Application that allows customers to browse and purchase food online. The application features a user-friendly interface. Used industrial coding standards. Implemented reusable components. Implemented Lazy loading. Application leverages SSR and SSG.",
+    tags: [
+      {
+        name: "angular",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind css",
+        color: "green-text-gradient",
+      },
+    ],
+    image: recipeBook,
+    source_code_link: "https://github.com/PRANAVPADMANABHANK/courseProject-angular",
+    // live_link: "https://smart-crystal-facility-management-india.com/"
+  },
+  {
+    name: "GigConnect",
+    description: "GigConnect is a online freelance platform that facilitates seamless communication between clients and skilled freelancers, enabling clients to submit work requests and provide revision feedback for an efficient and collaborative workflow",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "text-green-500",
       },
       {
         name: "mongodb",
@@ -166,40 +237,22 @@ const projects = [
         color: "text-red-500",
       },
       {
+        name: "jwt",
+        color: "text-yellow-500",
+      },
+      {
         name: "socket.io",
         color: "blue-text-gradient",
       },
     ],
-    image: binge,
-    source_code_link: "https://github.com/Muhsin-42/BingeIt",
-    live_link: "https://binge-chat.netlify.app"
+    image: gigConnect,
+    source_code_link: "https://github.com/PRANAVPADMANABHANK/GigConnect",
+    // live_link: "https://binge-chat.netlify.app"
   },
   {
-    name: "Smart Crystal Facility Management",
+    name: "Blog App",
     description:
-      "Web-based platform for a cleaning service agency. Implemented features such as  customer feedback, quality guarantee, customized service, eco-friendly products, lazy loading, image uploading, and rating system.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: smartCrystal,
-    source_code_link: "https://github.com/Muhsin-42/SystemCrystal",
-    live_link: "https://smart-crystal-facility-management-india.com/"
-  },
-  {
-    name: "Watch Club",
-    description:
-      "Website which allows users to buy watches from a wide range of products. Has a customized admin panel to handle products, orders, sales reports, etc. Image zooming, Discounts and coupons, OTP verification, and Payment options are also available.",
+      "A web application that helps users to publish blogs efficiently using MongoDB, Express.js, React.js, and Node.js. Allows creating, updating, and deleting tasks with real-time updates and a user-friendly interface.  Redux is implemented for efficient state management across the application",
     tags: [
       {
         name: "nodejs",
@@ -214,17 +267,21 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "ejs",
+        name: "redux",
         color: "green-text-gradient",
       },
       {
+        name: "jwt",
+        color: "pink-text-gradient",
+      },
+      {
         name: "bootstrap",
-        color: "blue-text-gradient",
+        color: "text-yellow-600",
       },
     ],
-    image: watchClub,
-    source_code_link: "https://github.com/Muhsin-42/WatchClub",
-    live_link: "https://watch-club.onrender.com/"
+    image: blogApp,
+    source_code_link: "https://github.com/PRANAVPADMANABHANK/MERN-Blog-App",
+    // live_link: "https://watch-club.onrender.com/"
   },
 ];
 

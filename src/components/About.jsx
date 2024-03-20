@@ -47,7 +47,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I am a skilled MERN stack developer with expertise in TypeScript, JavaScript, React, Node.js, and MongoDB. With a strong ability to quickly adapt and learn, I collaborate closely with clients to deliver efficient, scalable, and user-friendly solutions that solve real-world problems. As an experienced developer, I am dedicated to bringing your ideas to life and creating exceptional web applications. Let's work together to turn your vision into reality!     </motion.p>
+        I am a skilled MER(A)N stack developer with expertise in TypeScript, JavaScript, Angular, React, Node.js, and MongoDB. With a strong ability to quickly adapt and learn, I collaborate closely with clients to deliver efficient, scalable, and user-friendly solutions that solve real-world problems. As an experienced developer, I am dedicated to bringing your ideas to life and creating exceptional web applications. Let's work together to turn your vision into reality!     </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (

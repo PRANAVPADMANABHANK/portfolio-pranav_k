@@ -15,6 +15,7 @@ import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
+import angular from "./tech/angular.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
@@ -24,12 +25,14 @@ import firebase from "./tech/firebase.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
-import smartCrystalLogo from "./company/smartCrystal.jpeg";
+import mitzLogo from "./company/miztech_ai_logo.jpg";
 import brototype from "./company/brototype.jpg";
+import selfEmployed from "./company/selfEmployed.png";
+import tcsIon from "./company/tcsIon.png";
 
-import binge from "./binge1.jpeg";
-import smartCrystal from "./smart-crystal-1.jpeg";
-import watchClub from "./watch-club-1.jpeg";
+import recipeBook from "./recipeBook.png";
+import gigConnect from "./gigConnect.jpg";
+import blogApp from "./blogApp.jpg";
 
 export {
   logo,
@@ -48,6 +51,7 @@ export {
   javascript,
   mongodb,
   nodejs,
+  angular,
   reactjs,
   redux,
   tailwind,
@@ -57,8 +61,13 @@ export {
   meta,
   shopify,
   brototype,
-  binge,
-  smartCrystal,
-  smartCrystalLogo,
-  watchClub,
+  // binge,
+  // smartCrystal,
+  mitzLogo,
+  // watchClub,
+  selfEmployed,
+  tcsIon,
+  recipeBook,
+  gigConnect,
+  blogApp
 };
