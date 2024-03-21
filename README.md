@@ -1,3 +1,3 @@
 # PRANAV K PORTFOLIO
 
-Live preview : 
+Live preview : https://pranav-k-portfolio.netlify.app/
